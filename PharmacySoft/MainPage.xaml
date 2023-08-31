@@ -5,32 +5,67 @@
 
     <ScrollView>
         <VerticalStackLayout
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+            Spacing="25">
+
+            <VerticalStackLayout>
+                <Label Text="Leche Entera"
+                           FontSize="52"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"
+                           TextColor="#187FE5"></Label>
+                <Label Text="7501025"
+                           FontSize="22"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"></Label>
+            </VerticalStackLayout>
 
             <HorizontalStackLayout
                 Spacing="50"
                 HorizontalOptions="Center">
 
-                <VerticalStackLayout>
-                    <Image 
-                    Source="dotnet_bot.png"
-                    HeightRequest="150"></Image>
-                </VerticalStackLayout>
-
                 <VerticalStackLayout
                     Spacing="25"
                     VerticalOptions="Center">
-                    <Label Text="Leche Entera"
-                   FontSize="38"></Label>
-                    <Label Text="7501025"
-                   FontSize="28"
-                   HorizontalTextAlignment="Start"></Label>
-                    <Label Text="Precio: $100"
-                           FontSize="28"></Label>
-                    <Label Text="Oferta: Oferton"
-                           FontSize="28"></Label>
-                    <Label Text="Ahorra: Mucho dinero"
-                           FontSize="28"></Label>
+
+                    <Label Text="$100"
+                           FontSize="58"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"></Label>
+                    <HorizontalStackLayout>
+                        <Label Text="De: "
+                           FontSize="38"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Red"></Label>
+                        <Label Text="$100"
+                           FontSize="38"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Red"
+                           TextDecorations="Strikethrough"></Label>
+                        <Label Text=" a: "
+                           FontSize="38"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Blue"></Label>
+                        <Label Text="$80"
+                           FontSize="38"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Blue"
+                           TextDecorations="Underline"></Label>
+                    </HorizontalStackLayout>
+                    <Label Text="Ahorra: $20"
+                           FontSize="38"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"></Label>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <Image 
+                    Source="leche.png"
+                    HeightRequest="250"></Image>
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </VerticalStackLayout>
