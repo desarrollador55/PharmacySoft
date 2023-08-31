@@ -7,47 +7,27 @@
         <VerticalStackLayout
             VerticalOptions="Center">
 
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="300" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="100" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="160" />
-                </Grid.ColumnDefinitions>
-
-                <AbsoluteLayout
-                    BackgroundColor="Silver"
-                    Grid.Column="1"
-                    Padding="10">
-                    <Label Text="Producto: Precio"></Label>
-                </AbsoluteLayout>
-
-                <AbsoluteLayout
-                    BackgroundColor="Yellow"
-                    Grid.Column="1" Grid.Row="2">
-                </AbsoluteLayout>
-
-                <StackLayout
-                    BackgroundColor="Blue"
-                    Grid.Column="2"
-                    Padding="10">
-                    <Label Text="Hola"></Label>
-                    <Label Text="Hola"></Label>
-                </StackLayout>
-
-                <AbsoluteLayout
-                    BackgroundColor="Purple"
-                    Grid.Column="2" Grid.Row="2"
-                    Padding="5">
-                    <Label Text="Total:Precio total"
-                           Padding="10"></Label>
-                    <Button Text="Pagar: Total"></Button>
-                </AbsoluteLayout>
-            </Grid>
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Image 
+                Source="dotnet_bot.png"
+                HeightRequest="150"
+                HorizontalOptions="Start"></Image>
+                <VerticalStackLayout
+                    VerticalOptions="Center">
+                    <Label Text="Leche Entera"
+                   FontSize="38"></Label>
+                    <Label Text="7501025"
+                   FontSize="28"
+                   HorizontalTextAlignment="Start"></Label>
+                    <Label Text="Precio: $100"
+                           FontSize="28"></Label>
+                    <Label Text="Oferta: Oferton"
+                           FontSize="28"></Label>
+                    <Label Text="Ahorra: Mucho dinero"
+                           FontSize="28"></Label>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
