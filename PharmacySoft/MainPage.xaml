@@ -8,12 +8,17 @@
             VerticalOptions="Center">
 
             <HorizontalStackLayout
+                Spacing="50"
                 HorizontalOptions="Center">
-                <Image 
-                Source="dotnet_bot.png"
-                HeightRequest="150"
-                HorizontalOptions="Start"></Image>
+
+                <VerticalStackLayout>
+                    <Image 
+                    Source="dotnet_bot.png"
+                    HeightRequest="150"></Image>
+                </VerticalStackLayout>
+
                 <VerticalStackLayout
+                    Spacing="25"
                     VerticalOptions="Center">
                     <Label Text="Leche Entera"
                    FontSize="38"></Label>
@@ -30,5 +35,4 @@
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
