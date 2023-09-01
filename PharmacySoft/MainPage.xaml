@@ -5,67 +5,56 @@
 
     <ScrollView>
         <VerticalStackLayout
-            VerticalOptions="Center"
-            Spacing="25">
-
-            <VerticalStackLayout>
-                <Label Text="Leche Entera"
-                           FontSize="52"
-                           FontFamily="OpenSans-Semibold"
-                           HorizontalTextAlignment="Center"
-                           TextColor="#187FE5"></Label>
-                <Label Text="7501025"
-                           FontSize="22"
-                           FontFamily="OpenSans-Semibold"
-                           HorizontalTextAlignment="Center"></Label>
-            </VerticalStackLayout>
+            VerticalOptions="Center">
 
             <HorizontalStackLayout
-                Spacing="50"
                 HorizontalOptions="Center">
+
+                <Image
+                   Source="leche.png"
+                   HeightRequest="275"
+                   WidthRequest="325"
+                   Aspect="Fill"></Image>
 
                 <VerticalStackLayout
                     Spacing="25"
                     VerticalOptions="Center">
 
-                    <Label Text="$100"
-                           FontSize="58"
+                    <VerticalStackLayout>
+                        <Label Text="Leche Entera"
+                           FontSize="52"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"
+                           TextColor="#187FE5"></Label>
+                        <Label Text="7501025"
+                           FontSize="22"
                            FontFamily="OpenSans-Semibold"
                            HorizontalTextAlignment="Center"></Label>
-                    <HorizontalStackLayout>
-                        <Label Text="De: "
+                    </VerticalStackLayout>
+
+                    <Label Text="$100"
+                           FontSize="80"
+                           FontFamily="OpenSans-Semibold"
+                           HorizontalTextAlignment="Center"></Label>
+                    <HorizontalStackLayout
+                        HorizontalOptions="Center">
+                        <Label Text="De:"
                            FontSize="38"
                            FontFamily="OpenSans-Semibold"
                            HorizontalTextAlignment="Center"
-                           TextColor="Red"></Label>
+                           TextColor="#FF6600"></Label>
                         <Label Text="$100"
                            FontSize="38"
                            FontFamily="OpenSans-Semibold"
                            HorizontalTextAlignment="Center"
                            TextColor="Red"
                            TextDecorations="Strikethrough"></Label>
-                        <Label Text=" a: "
-                           FontSize="38"
-                           FontFamily="OpenSans-Semibold"
-                           HorizontalTextAlignment="Center"
-                           TextColor="Blue"></Label>
-                        <Label Text="$80"
-                           FontSize="38"
-                           FontFamily="OpenSans-Semibold"
-                           HorizontalTextAlignment="Center"
-                           TextColor="Blue"
-                           TextDecorations="Underline"></Label>
                     </HorizontalStackLayout>
                     <Label Text="Ahorra: $20"
                            FontSize="38"
                            FontFamily="OpenSans-Semibold"
-                           HorizontalTextAlignment="Center"></Label>
-                </VerticalStackLayout>
-
-                <VerticalStackLayout>
-                    <Image 
-                    Source="leche.png"
-                    HeightRequest="250"></Image>
+                           HorizontalTextAlignment="Center"
+                           TextColor="#FF6600"></Label>
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </VerticalStackLayout>
